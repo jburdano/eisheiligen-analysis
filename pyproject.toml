@@ -1,0 +1,24 @@
+[project]
+name = "fdm101"
+version = "0.1.0"
+description = "Project aims to test the “Ice Saints” folk saying using existing temperature data from German Weather Service"
+readme = "README.md"
+authors = [
+    { name = "jburdano", email = "jburdano@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+fdm101 = "fdm101:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
